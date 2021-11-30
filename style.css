@@ -166,7 +166,7 @@ input[type="email"]:active {
     height: calc(100vh - 38.6px);
     align-items: center;
     justify-content:center; 
-    margin-bottom: unset;
+    margin-bottom: 0;
   }
 
   .header{
