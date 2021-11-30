@@ -20,12 +20,12 @@
 <body>
 <!-- Header -->
  <header class="header">
-   <img src="/images/logo.svg" alt="">
+   <nav><img src="/images/logo.svg" alt=""></nav>
  </header>
  <!-- Main Content -->
   <main>
     <!-- Hero Image -->
-    <img src="images/hero-mobile.jpg" alt="hero" class="hero">
+    <div alt="hero" class="hero"></div>
     <!-- Headline -->
     <div class="headline">
       <h1 class="title text-red fw-300" >We're <br><span class="text-gray fw-600">coming <br>soon</span></h1>
@@ -33,12 +33,16 @@
         Hello fellow shoppers! We're currently building our new fashion store. 
   Add your email below to stay up-to-date with announcements and our launch deals.
       </p>
+      <!-- Email Form -->
+          <form action="index.html" name="email-form" onsubmit="return validateEmail()" novalidate>
+           <div class="form-inner">
+            <input type="email" name="email" id="email" placeholder="  Email Address" value="">
+            <img src="images/icon-error.svg" alt="" class="icon error-icon" id="error-icon">
+            <button class="button"><img src="/images/icon-arrow.svg" alt="" class="icon"></button>
+           </div>
+          </form>
+          <p id="email-error">please provide a valid email</p>
     </div>
-<!-- Email Form -->
-    <form action="">
-      <input type="email" name="email" id="email" placeholder="  Email Address">
-      <button class="button"><img src="/images/icon-arrow.svg" alt="" class="icon"></button>
-    </form>
   </main>
   <!-- <footer>
     <p class="attribution">
@@ -46,5 +50,7 @@
       Coded by <a href="#">Your Name Here</a>.
     </p>
   </footer> -->
+
+  <script src="main.js"></script>
 </body>
 </html>
