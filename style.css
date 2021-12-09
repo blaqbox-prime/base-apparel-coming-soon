@@ -186,7 +186,7 @@ input[type="email"]:active {
 
   .hero {
     position: absolute;
-    height: 100vh;
+    height: calc(100vh + 38.6px);
     right: 0;
     top: 0;
     width: 40vw;
